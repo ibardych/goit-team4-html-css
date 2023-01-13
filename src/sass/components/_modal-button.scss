@@ -1,0 +1,22 @@
+.modal-button {
+  display: block;
+  width: 100%;
+  color: $secondary-color;
+  padding: 10px 35px;
+  font-size: 14px;
+  line-height: 1.2;
+  background-color: $brand-color;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 250ms;
+  transition: background-color $animation-duration $transition-timing-function;
+}
+
+.modal-button:hover {
+  background-color: $hover-color;
+}
+
+.modal-button:focus {
+  background-color: $focus-color;
+}

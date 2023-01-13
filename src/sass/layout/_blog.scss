@@ -1,3 +1,19 @@
+.blog__title {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: $tablet) {
+  .blog__title {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .blog__title {
+    margin-bottom: 60px;
+  }
+}
+
 .blog__text {
   font-size: 18px;
   line-height: 1.22;
@@ -15,5 +31,25 @@
 @media screen and (min-width: $desktop) {
   .blog__text {
     margin-bottom: 48px;
+  }
+}
+
+.blog__gallery {
+  display: flex;
+  margin: 0 auto;
+  max-width: 768px;
+  margin-bottom: 28px;
+  column-gap: 20px;
+}
+
+@media screen and (min-width: $tablet) {
+  .blog__gallery {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .blog__gallery {
+    margin-bottom: 44px;
   }
 }
