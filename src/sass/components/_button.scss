@@ -1,0 +1,29 @@
+.main-button {
+  color: #ffffff;
+  padding: 10px 35px;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: $brandcolor;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 250ms;
+  transition: background-color $animation-duration $transition-timing-function;
+  margin: 0 auto;
+  display: block;
+}
+
+.main-button:hover {
+  background-color: $hovercolor;
+}
+
+.main-button:focus {
+  background-color: $focuscolor;
+}
+
+@media screen and (min-width: $mobile) {
+  .main-button {
+    font-size: 28px;
+    padding: 20px 44px;
+  }
+}
