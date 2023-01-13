@@ -1,9 +1,9 @@
 .main-button {
-  color: #ffffff;
+  color: $secondary-color;
   padding: 10px 35px;
   font-size: 20px;
   line-height: 24px;
-  background-color: $brandcolor;
+  background-color: $brand-color;
   border: none;
   border-radius: 40px;
   cursor: pointer;
@@ -14,11 +14,11 @@
 }
 
 .main-button:hover {
-  background-color: $hovercolor;
+  background-color: $hover-color;
 }
 
 .main-button:focus {
-  background-color: $focuscolor;
+  background-color: $focus-color;
 }
 
 @media screen and (min-width: $mobile) {
