@@ -1,0 +1,29 @@
+.store {
+    background-color: aqua;
+}
+.store-list {
+    display: flex;
+}
+.store-list__item {
+    background-color: chartreuse;
+}
+.list {
+    text-decoration: none;
+}
+
+.store-list__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-align: center;
+}
+.store-list__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-align: center;
+}
