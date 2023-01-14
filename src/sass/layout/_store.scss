@@ -5,6 +5,7 @@
 .store-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   // justify-content: space-between;
   gap: 16px;
   margin-bottom: 60px;
@@ -13,7 +14,7 @@
   background-color: #fff;
   width: calc((100% - 16px * 1) / 2);
   margin: 0px;
-  outline: 1px solid tomato;
+ 
 }
 .store-list__item:nth-child(2n) {
   margin-right: 0;
