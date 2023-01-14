@@ -9,12 +9,18 @@
   // justify-content: space-between;
   gap: 16px;
   margin-bottom: 60px;
+  
+  @media screen and (min-width: $tablet) {
+    gap: 32px;
+  }
 }
 .store-list__item {
   background-color: #fff;
   width: calc((100% - 16px * 1) / 2);
   margin: 0px;
- 
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 32px * 1) / 2);
+  }
 }
 .store-list__item:nth-child(2n) {
   margin-right: 0;
@@ -39,6 +45,13 @@
 
   margin-top: 12px;
   margin-bottom: 6px;
+  
+  @media screen and (min-width: $tablet) {
+    font-size: 32px;
+  line-height: calc(39px / 32px);
+  margin-top: 16px;
+  margin-bottom: 8px;
+  }
 }
 .store-list__text {
   font-weight: 600;
@@ -46,4 +59,9 @@
   line-height: calc(15px / 12px);
   color: rgba(0, 0, 0, 0.6);
   text-align: left;
+   
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+  line-height: calc(29px / 24px);
+  }
 }
