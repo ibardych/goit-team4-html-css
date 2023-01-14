@@ -1,0 +1,35 @@
+.footer {
+     display: flex;
+    flex-wrap: wrap;
+  background-color: #000000;
+}
+.footer__title {
+  font-weight: 700;
+  font-size: 18px;gпше
+  line-height: calc(22 / 18);
+  color: #ffffff;
+}
+.nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: #ffffff;
+}
+.footer__open-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: #ffffff;
+}
+.footer__contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: #ffffff;
+}
+.footer__contact-address {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: #ffffff;
+}
