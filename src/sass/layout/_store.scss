@@ -9,7 +9,7 @@
   // justify-content: space-between;
   gap: 16px;
   margin-bottom: 60px;
-  
+
   @media screen and (min-width: $tablet) {
     gap: 32px;
   }
@@ -42,16 +42,31 @@
   line-height: calc(20px / 16px);
   color: #000000;
   text-align: left;
+  
 
   margin-top: 12px;
   margin-bottom: 6px;
-  
+
   @media screen and (min-width: $tablet) {
     font-size: 32px;
-  line-height: calc(39px / 32px);
-  margin-top: 16px;
-  margin-bottom: 8px;
+    line-height: calc(39px / 32px);
+    margin-top: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 8px;
+    white-space: nowrap;
+    
+ 
   }
+}
+.store-list__title::after {
+  content: '';
+  width: calc((100% - 8px * 1) / 2);
+  height: 1px;
+  background-color: #000;
 }
 .store-list__text {
   font-weight: 600;
@@ -59,9 +74,40 @@
   line-height: calc(15px / 12px);
   color: rgba(0, 0, 0, 0.6);
   text-align: left;
-   
+
   @media screen and (min-width: $tablet) {
     font-size: 24px;
-  line-height: calc(29px / 24px);
+    line-height: calc(29px / 24px);
   }
 }
+
+.main-button--store {
+  color: $secondary-color;
+  padding: 10px 35px;
+  font-size: 20px;
+  line-height: calc(24px / 20px);
+  background-color: $brand-color;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 250ms;
+  transition: background-color $animation-duration $transition-timing-function;
+  margin: 0 auto;
+  display: block;
+  @media screen and (min-width: $tablet) {
+    font-size: 28px;
+    line-height: calc(24px / 28px);
+    padding: 20px 44px;
+
+  }
+}
+
+.main-button--store:hover {
+  background-color: $hover-color;
+}
+
+.main-button--store:focus {
+  background-color: $focus-color;
+}
+
+
