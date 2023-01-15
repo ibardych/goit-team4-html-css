@@ -118,8 +118,8 @@
 
 @media screen and (min-width: $tablet) {
   .modal-subscribe__image {
-    background: url(../images/modal-subscribe/modal-subscribe-tablet@1x.jpg)
-      no-repeat center;
+    background: url(../images/modal-subscribe/modal-subscribe-tablet@1x.jpg) 0 0 /
+      cover no-repeat;
   }
 }
 
@@ -136,8 +136,8 @@
 @media screen and (min-width: $desktop) {
   .modal-subscribe__image {
     width: 428px;
-    background: url(../images/modal-subscribe/modal-subscribe-desktop@1x.jpg)
-      no-repeat center;
+    background: url(../images/modal-subscribe/modal-subscribe-desktop@1x.jpg) 0
+      0 / cover no-repeat;
   }
 }
 
