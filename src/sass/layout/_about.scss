@@ -1,0 +1,32 @@
+.about-title {
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 1.2;
+ margin-bottom: 32px;
+
+ @media screen and (min-width: $tablet) {
+ margin-bottom: 0;
+ font-size: 44px;
+ }
+
+ @media screen and (min-width: $desktop) {
+ margin-bottom: 0;
+ font-size: 44px;
+ }
+} 
+
+.about-text {
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 1.25;
+
+ @media screen and (min-width: $tablet) {
+ font-size: 20px;
+ line-height: 1,2;
+ }
+
+ @media screen and (min-width: $desktop) {
+ font-size: 22px;
+ line-height: 1.2;
+ }
+}
