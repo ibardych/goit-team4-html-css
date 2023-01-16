@@ -162,15 +162,15 @@
     margin-right: 16px;
   }
 }
-.social__item :not(:last-child) {
-  margin-right: 14px;
+.social__item  {
+  margin-left: 14px;
 }
 @media screen and (min-width: $tablet) {
-  .social__item :not(:last-child) {
-    margin-bottom: 18px;
+  .social__item  {
+    margin-top: 18px;
   }
   .social__item {
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 .social__icon {
