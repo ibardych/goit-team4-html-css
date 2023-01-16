@@ -1,26 +1,26 @@
-<div data-modal class="modal is-hidden">
-    <div class="modalwindow">
-      <div class="modalinner">
-        <div class="modalcontainer">
-          <h3 class="modaltitle">Contact us</h3>
-          <p class="modaltext">
+<div class="modal is-hidden" data-modal-store="">
+    <div class="modal__window">
+      <div class="modal__inner modal__inner-store ">
+        <div class="modal__container">
+          <h3 class="modal__title">Contact us</h3>
+          <p class="modal__text">
             If you have any additional questions or you want to clarify something before you make an order please fill in your contact details. We will call you back. 
           </p>
-          <form name="modalform">
-            <label class="modalform-label" for="modal-window-email"
-              >Email</label
+          <form name="modal__form">
+            <label class="modal__form-label" for="modal-window-email"
+              >Name</label
             >
             <input
-              class="modalform-input"
-              type="email"
-              name="email"
-              placeholder="Your email"
+              class="modal__form-input"
+              type="text"
+              name="user_name"
+              placeholder="Your name"
             />
-            <label class="modalform-label" for="modal-window-email"
+            <label class="modal__form-label" for="modal-window-email"
               >Email</label
             >
             <input
-              class="modalform-input modalform-input-last"
+              class="modal__form-input modalform-input-last"
               type="email"
               name="email"
               placeholder="Your email"
@@ -28,7 +28,7 @@
             <button type="submit" class="modal-button">Send</button>
           </form>
         </div>
-        <button type="button" data-modal-close class="modalclose">
+        <button type="button" class="modal__close" data-modal-close-store>
           <svg width="18" height="18">
             <use href="./images/icon/icon.svg#icon-close"></use>
           </svg>
@@ -39,64 +39,3 @@
 
 
 
-
-
-
-
-
-
-
-<!-- <div data-modal class="backdrop is-hidden">
-    <div class="modal">
-      <p class="modal__title">Contact us</p>
-
-      <form class="modal-form" name="modal">
-        <div class="modal-group">
-          <label class="modal-group__field" for="user_name"
-            ><span class="modal-group__text">Ім'я</span>
-
-            <div class="modal-group__icons">
-              <input
-                class="modal-group__input"
-                type="text"
-                name="user_name"
-                required
-                minlength="2"
-                maxlength="25"
-                autofocus
-              />
-            </div>
-          </label>
-        </div>
-        <div class="modal-group">
-          <label class="modal-group__field" for="user_email">
-            <span class="modal-group__text">Пошта</span>
-
-            <div class="modal-group__icons">
-              <input
-                class="modal-group__input"
-                type="email"
-                name="user_email"
-                required
-                minlength="3"
-                maxlength="25"
-              />
-            </div>
-          </label>
-        </div>
-
-     
-      </form>
-
-      <button data-modal-open class="modal-btn-send" type="submit">
-        Send
-      </button>
-      <button data-modal-close class="modal-btn-close">
-        <div class="modal-img">
-          <!-- <svg class="modal-img">
-            <use href="./images/icons.svg#xmark"></use>
-          </svg> -->
-        </div>
-      </button>
-    </div>
-      </div> -->
