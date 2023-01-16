@@ -1,0 +1,101 @@
+<div data-modal class="backdrop is-hidden">
+    <div class="modal">
+      <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+
+      <form class="modal-form" name="modal">
+        <div class="modal-group">
+          <label class="modal-group__field" for="user_name"
+            ><span class="modal-group__text">Ім'я</span>
+
+            <div class="modal-group__icons">
+              <input
+                class="modal-group__input"
+                type="text"
+                name="user_name"
+                required
+                minlength="2"
+                maxlength="25"
+                autofocus
+              />
+              <svg class="modal-group__pic">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+          </label>
+        </div>
+
+        <div class="modal-group">
+          <label class="modal-group__field" for="user_tel"
+            ><span class="modal-group__text">Телефон</span>
+
+            <div class="modal-group__icons">
+              <input class="modal-group__input" type="tel" name="user_tel" />
+              <svg class="modal-group__pic">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </label>
+        </div>
+
+        <div class="modal-group">
+          <label class="modal-group__field" for="user_email">
+            <span class="modal-group__text">Пошта</span>
+
+            <div class="modal-group__icons">
+              <input
+                class="modal-group__input"
+                type="email"
+                name="user_email"
+                required
+                minlength="3"
+                maxlength="25"
+              />
+              <svg class="modal-group__pic">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+          </label>
+        </div>
+
+        <div class="modal-group">
+          <label class="modal-group__field" for="user_comment"
+            ><span class="modal-group__text">Коментар</span>
+
+            <textarea
+              class="modal-group__textarea"
+              name="user_comment"
+              id="user_comment"
+              cols="100"
+              rows="90"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+        </div>
+      </form>
+      <form class="checkbox">
+        <label class="checkbox__field">
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            name="user_check"
+            required
+          />
+          <span class="checkbox__input-noagree"></span>
+          <span class="checkbox__text"
+            >Погоджуюся з розсилкою та приймаю</span
+          >
+          <a class="checkbox__agreement link" href="#">Умови договору</a>
+        </label>
+      </form>
+      <button data-modal-open class="modal-btn-send" type="submit">
+        Відправити
+      </button>
+      <button data-modal-close class="modal-btn-close">
+        <div class="modal-img">
+          <svg class="modal-img">
+            <use href="./images/icons.svg#xmark"></use>
+          </svg>
+        </div>
+      </button>
+    </div>
+      </div>
