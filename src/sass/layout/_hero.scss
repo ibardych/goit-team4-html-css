@@ -64,12 +64,25 @@
  }
 }
 
-// &__form {
-//  @media screen and (min-width: $desktop) {
+&__element {
+ @media screen and (min-width: $desktop) {
 //  max-width: 58px;
-//  border-top: 8px solid #0E0E0E;
-//  }
-// }
+ position: relative;
+ display: inline-block;
+ }
+}
+
+&__element::after {
+ @media screen and (min-width: $desktop) {
+ content: "";
+ width: 58px;
+ height: 8px;
+ background-color: $main-color;
+ position: absolute;
+ top: 15px;
+ left: 28px;
+ }
+}
 }
 
 .hero-fon {
