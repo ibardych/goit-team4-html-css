@@ -27,3 +27,15 @@
     padding: 20px 44px;
   }
 }
+
+// Hero
+
+.hero-btn {
+  background-color: inherit;
+  border: none;
+  padding-right: 0;
+ 
+  @media screen and (min-width: $desktop) {
+  padding-right: 145px;
+  }
+ }
