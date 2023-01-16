@@ -7,6 +7,69 @@
  @media screen and (min-width: $desktop) {
  padding-top: 64px;
  }
+
+ &__text {
+ width: 46px;
+ height: 34px;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 1.2;
+ padding-left: 11px;
+
+ @media screen and (min-width: $tablet) {
+ width: 76px;
+ height: 58px;
+ font-size: 24px;
+ padding-left: 49px;
+ }
+
+ @media screen and (min-width: $desktop) {
+ width: 101px;
+ height: 78px;
+ font-size: 32px;
+ padding-left: 210px;
+ }
+}
+
+&__title {
+ display: flex;
+ justify-content: center;
+ font-weight: 400;
+ font-size: 14px;
+ font-size: 52px;
+ line-height: 1.2;
+ margin-bottom: -35px;
+
+ @media screen and (min-width: $tablet) {
+ font-size: 120px;
+ margin-bottom: -94px;
+ }
+
+ @media screen and (min-width: $desktop) {
+ font-size: 160px;
+ margin-bottom: -93px;
+ }
+}
+
+&__icon {
+ cursor: pointer;
+ @media screen and (min-width: $tablet) {
+  width: 145px;
+  height: 150px;
+ }
+ 
+ @media screen and (min-width: $desktop) {
+  width: 166px;
+  height: 166px;
+ }
+}
+
+// &__form {
+//  @media screen and (min-width: $desktop) {
+//  max-width: 58px;
+//  border-top: 8px solid #0E0E0E;
+//  }
+// }
 }
 
 .hero-fon {
@@ -49,7 +112,7 @@
   margin-bottom: 193px;
   height: 636px;
   
-   @media (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
  (min-resolution: 192dpi),
  (min-resolution: 2dppx){
     background-image: url(../images/hero/home_imgdesk@2x.jpg); 
@@ -57,58 +120,6 @@
   }
 }
 
-.hero-btn {
- background-color: inherit;
- border: none;
- padding-right: 0;
-
- @media screen and (min-width: $desktop) {
- padding-right: 145px;
- }
-}
-
-.hero-title {
- display: flex;
- justify-content: center;
- font-weight: 400;
- font-size: 14px;
- font-size: 52px;
- line-height: 1.2;
- margin-bottom: -35px;
-
- @media screen and (min-width: $tablet) {
- font-size: 120px;
- margin-bottom: -94px;
- }
-
- @media screen and (min-width: $desktop) {
- font-size: 160px;
- margin-bottom: -93px;
- }
-}
-
-.hero-text {
- width: 46px;
- height: 34px;
- font-weight: 400;
- font-size: 14px;
- line-height: 1.2;
- padding-left: 11px;
-
- @media screen and (min-width: $tablet) {
- width: 76px;
- height: 58px;
- font-size: 24px;
- padding-left: 49px;
- }
-
- @media screen and (min-width: $desktop) {
- width: 101px;
- height: 78px;
- font-size: 32px;
- padding-left: 210px;
- }
-}
 
 .hero-one {
  display: flex;
@@ -125,14 +136,3 @@
   }
 }
 
-.hero-icon {
- @media screen and (min-width: $tablet) {
-    width: 145px;
-    height: 150px;
- }
-    
- @media screen and (min-width: $desktop) {
-    width: 166px;
-    height: 166px;
- }
-}
