@@ -1,122 +1,130 @@
 .modal-subscribe {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0 0 0 / 0.3);
-  z-index: 1;
-  opacity: 1;
-  visibility: visible;
-  transition-property: visibility, opacity;
-  transition: $animation-duration $transition-timing-function;
 }
 
-.modal-subscribe.is-hidden {
-  @extend %is-hidden;
+@media screen and (min-width: $tablet) {
+  .modal-subscribe__window {
+    width: calc(#{$tablet} - 90px * 2);
+    max-width: calc(100% - 90px * 2);
+  }
 }
 
-.modal-subscribe__window {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: calc(408px + 18px * 2);
-  max-width: 100%;
-  padding: 18px;
-  transform: translateX(-50%) translateY(-50%);
+@media screen and (min-width: $desktop) {
+  .modal-subscribe__window {
+    max-width: calc(#{$desktop} - 210px * 2);
+    width: calc(#{$desktop} - 210px * 2);
+  }
 }
 
-.modal-subscribe__inner {
-  background-color: #fcfcfc;
-  transform: scale(1);
-  transition: transform $animation-duration $transition-timing-function;
+@media screen and (min-width: $desktop) {
+  .modal-subscribe__inner {
+    display: flex;
+  }
 }
 
-.modal-subscribe.is-hidden .modal-subscribe__inner {
-  transform: scale(0.7);
-  transition: transform $animation-duration $transition-timing-function;
-}
-
-.modal-subscribe__close {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 14px;
-  right: 14px;
-  cursor: pointer;
-  background-color: rgb(0 0 0 / 0);
-  border: none;
-  padding: 0;
-  transition: opacity $animation-duration $transition-timing-function;
-}
-
-.modal-subscribe__close svg {
-  width: 18px;
-  height: 18px;
-  display: block;
-  stroke: $main-color;
-}
-
-.modal-subscribe__close:hover,
-.modal-subscribe__close:focus {
-  opacity: 0.5;
-}
-
-.modal-subscribe__continer {
+.modal-subscribe__container {
   padding: 18px 16px 28px 16px;
 }
 
-.modal-window__title {
-  font-weight: 600;
+@media screen and (min-width: $desktop) {
+  .modal-subscribe__container {
+    padding: 112px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.modal-subscribe__container-inner {
+  padding: 0 8px;
+  max-width: 352px;
+  margin: 0 auto;
+}
+
+.modal-subscribe__title {
   font-size: 19px;
-  line-height: 1.2;
   text-align: center;
-  margin-bottom: 14px;
 }
 
-.modal-window__text {
+@media screen and (min-width: $tablet) {
+  .modal-subscribe__title {
+    font-size: 28px;
+  }
+}
+
+.modal-subscribe__text {
   text-align: center;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3;
-  margin-bottom: 18px;
-  color: $modal-color1;
-}
-
-.modal-subscribe__form {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
-}
-
-.modal-subscribe__form-label {
-  display: block;
-  font-size: 10px;
-  line-height: 1.2;
-  color: $modal-color1;
-  margin-bottom: 8px;
 }
 
 .modal-subscribe__form-input {
-  display: block;
-  width: 100%;
-  height: 35px;
-  padding: 10px 12px;
-  border: 1px solid $modal-color2;
-  border-radius: 4px;
-  background-color: inherit;
-  outline: inherit;
-  font-size: 12px;
-  line-height: 1.25;
-  transition: border-color $animation-duration $transition-timing-function;
   margin-bottom: 18px;
 }
 
-.modal-subscribe__form-input:focus {
-  border: 1px solid #000;
+@media screen and (min-width: $tablet) {
+  .modal-subscribe__form-input {
+    margin-bottom: 28px;
+  }
 }
 
-.modal-subscribe__form-input::placeholder {
-  font-size: 12px;
-  line-height: 1.25;
+.modal-subscribe__image {
+  background: url(../images/modal-subscribe/modal-subscribe-mobile@1x.jpg) 0 0 /
+    cover no-repeat;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: calc(#{$tablet} - 0.02px)) and (min-device-pixel-ratio: 2),
+  screen and (max-width: calc(#{$tablet} - 0.02px)) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (max-width: calc(#{$tablet} - 0.02px)) and (min-resolution: 192dpi),
+  screen and (max-width: calc(#{$tablet} - 0.02px)) and (min-resolution: 2dppx) {
+  .modal-subscribe__image {
+    background: url(../images/modal-subscribe/modal-subscribe-mobile@2x.jpg) 0 0 /
+      cover no-repeat;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .modal-subscribe__image {
+    background: url(../images/modal-subscribe/modal-subscribe-tablet@1x.jpg) 0 0 /
+      cover no-repeat;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 0.02px)) and (min-device-pixel-ratio: 2),
+  screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 0.02px)) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 0.02px)) and (min-resolution: 192dpi),
+  screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 0.02px)) and (min-resolution: 2dppx) {
+  .modal-subscribe__image {
+    background: url(../images/modal-subscribe/modal-subscribe-tablet@2x.jpg) 0 0 /
+      cover no-repeat;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .modal-subscribe__image {
+    width: 428px;
+    background: url(../images/modal-subscribe/modal-subscribe-desktop@1x.jpg) 0
+      0 / cover no-repeat;
+  }
+}
+
+@media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
+  screen and (min-width: $desktop) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: $desktop) and (min-resolution: 192dpi),
+  screen and (min-width: $desktop) and (min-resolution: 2dppx) {
+  .modal-subscribe__image {
+    background: url(../images/modal-subscribe/modal-subscribe-desktop@2x.jpg) 0
+      0 / cover no-repeat;
+  }
+}
+
+.modal-subscribe__image::after {
+  content: '';
+  padding-top: calc(199 / 432 * 100 * 1%);
+  display: block;
+}
+
+@media screen and (min-width: $desktop) {
+  .modal-subscribe__image::after {
+    padding-top: calc(528 / 428 * 100 * 1%);
+  }
 }

@@ -6,6 +6,18 @@
     }
 }
 
+.section-title--delivery {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 80px;
+    }
+}
+
 .delivery__list {
     margin-bottom: 26px;
 
@@ -80,4 +92,14 @@
         font-size: 26px;
         line-height: 1.23;
     }
+}
+
+.delivery__picture {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.delivery__img {
+    width: 100%;
 }
