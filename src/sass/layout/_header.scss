@@ -1,0 +1,73 @@
+@import '../utils/vars';
+
+.container--header {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: $tablet) {
+    align-items: center;
+  }
+}
+
+.header__nav {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+
+  }
+}
+
+.header__nav-list {
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 48px;
+  }
+}
+
+.nav-link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $main-color;
+}
+
+.nav-link--color {
+    color: $secondary-color;
+}
+
+.header__contact-icon {
+  fill: $main-color;
+
+  @media screen and (min-width: $tablet) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.header__menu {
+  margin-left: 14px;
+  
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.header__menu-icon {
+  fill: $main-color;
+}
+
+.header__wrapper {
+  display: flex;
+}

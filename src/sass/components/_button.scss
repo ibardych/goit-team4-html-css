@@ -1,6 +1,9 @@
 .main-button {
   color: $secondary-color;
+  
   padding: 10px 35px;
+  margin: 0 auto;
+   
   font-size: 20px;
   line-height: 24px;
   background-color: $brand-color;
@@ -9,7 +12,6 @@
   cursor: pointer;
   transition: 250ms;
   transition: background-color $animation-duration $transition-timing-function;
-  margin: 0 auto;
   display: block;
 }
 
@@ -27,15 +29,3 @@
     padding: 20px 44px;
   }
 }
-
-// Hero
-
-.hero-btn {
-  background-color: inherit;
-  border: none;
-  padding-right: 0;
- 
-  @media screen and (min-width: $desktop) {
-  padding-right: 145px;
-  }
- }

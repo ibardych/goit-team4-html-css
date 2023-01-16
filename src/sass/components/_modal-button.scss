@@ -2,14 +2,13 @@
   display: block;
   width: 100%;
   color: $secondary-color;
-  padding: 10px 35px;
+  padding: 10px;
   font-size: 14px;
   line-height: 1.2;
   background-color: $brand-color;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: 250ms;
   transition: background-color $animation-duration $transition-timing-function;
 }
 
@@ -19,4 +18,11 @@
 
 .modal-button:focus {
   background-color: $focus-color;
+}
+
+@media screen and (min-width: $tablet) {
+  .modal-button {
+    padding: 14px;
+    font-size: 18px;
+  }
 }
