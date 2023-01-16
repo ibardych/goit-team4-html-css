@@ -125,17 +125,17 @@
     margin-right: 208px;
   }
 }
-.footer__contact-list{
-font-style: normal;
+.footer__contact-list {
+  font-style: normal;
 }
 .footer__contact,
-  .contact-footer,
-  .footer__contact-address {
+.contact-footer,
+.footer__contact-address {
   font-style: normal;
   font-size: 14px;
   line-height: calc(17 / 14);
   color: #ffffff;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     font-size: 16px;
   }
 }
@@ -150,7 +150,7 @@ font-style: normal;
   display: flex;
 }
 @media screen and (min-width: 768px) {
- .social__list {
+  .social__list {
     display: block;
     margin-right: 16px;
   }
@@ -159,11 +159,11 @@ font-style: normal;
   margin-right: 14px;
 }
 @media screen and (min-width: 768px) {
- .social__item :not(:last-child){
+  .social__item :not(:last-child) {
     margin-bottom: 18px;
   }
   .social__item {
-     margin-right: 0;
+    margin-right: 0;
   }
 }
 .social__icon {
