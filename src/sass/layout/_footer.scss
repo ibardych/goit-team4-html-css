@@ -1,5 +1,5 @@
 .footer {
-  background-color: #000000;
+  background-color: $main-color;
 }
 .footer--container {
   display: flex;
@@ -9,14 +9,14 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .footer--container {
     justify-content: center;
     padding-top: 60px;
     padding-bottom: 54px;
   }
 }
-@media screen and (min-width: 1280px){
+@media screen and (min-width: $desktop) {
   .footer--container {
     padding-top: 72px;
     padding-bottom: 72px;
@@ -26,15 +26,20 @@
   font-weight: 700;
   font-size: 18px;
   line-height: calc(22 / 18);
-  color: #ffffff;
+  color: $secondary-color;
   margin-bottom: 18px;
+}
+@media screen and (min-width: $tablet) {
+  .footer__title {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 1279.8px) {
   .footer__logo {
     display: none;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $desktop) {
   .footer__logo {
     width: 73px;
     margin-right: 210px;
@@ -43,23 +48,22 @@
 .footer-nav {
   margin-right: auto;
   margin-bottom: 32px;
-  margin-right: auto;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 350px) {
   .footer-nav {
     margin-right: 44px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .footer-nav {
     width: 144px;
     margin-bottom: 0;
     margin-right: 44px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $desktop) {
   .footer-nav {
     width: 116px;
     margin-right: 96px;
@@ -71,19 +75,24 @@
 .footer-nav__link {
   font-size: 14px;
   line-height: calc(17 / 14);
-  color: #ffffff;
+  color: $secondary-color;
+}
+@media screen and (min-width: $tablet) {
+  .footer-nav__link {
+    font-size: 16px;
+  }
 }
 .footer__opening {
   margin-right: auto;
   margin-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .footer__opening {
     width: 143px;
     margin-right: 44px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $desktop) {
   .footer__opening {
     margin-right: 96px;
   }
@@ -91,35 +100,54 @@
 .footer__opening-item {
   font-size: 14px;
   line-height: calc(17 / 14);
-  color: #ffffff;
+  color: $secondary-color;
 }
-
+@media screen and (min-width: $tablet) {
+  .footer__opening-item {
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 290px) {
   .footer__contact {
     width: 128px;
     margin-right: 32px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .footer__contact {
     width: 236px;
     margin-right: 64px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $desktop) {
   .footer__contact {
     margin-right: 208px;
   }
 }
+.footer__contact-list {
+  font-style: normal;
+}
 .footer__contact,
 .contact-footer,
 .footer__contact-address {
+  font-style: normal;
   font-size: 14px;
   line-height: calc(17 / 14);
-  color: #ffffff;
+  color: $secondary-color;
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
 }
 .footer__contact-item:not(:last-child) {
   margin-bottom: 12px;
+}
+.contact-span {
+  white-space: pre-wrap;
+}
+@media screen and (min-width: $tablet) {
+  .contact-span {
+    white-space: nowrap;
+  }
 }
 .footer__icon {
   margin-right: auto;
@@ -128,15 +156,23 @@
 .social__list {
   display: flex;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .social__list {
     display: block;
     margin-right: 16px;
   }
 }
-.social__item:not(:last-child) {
+.social__item :not(:last-child) {
   margin-right: 14px;
 }
+@media screen and (min-width: $tablet) {
+  .social__item :not(:last-child) {
+    margin-bottom: 18px;
+  }
+  .social__item {
+    margin-right: 0;
+  }
+}
 .social__icon {
-  fill: #ffffff;
+  fill: $secondary-color;
 }
