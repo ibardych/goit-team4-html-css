@@ -6,7 +6,10 @@
   background-color: #fff;
   position: fixed;
   z-index: 2;
-  border-bottom: 1px solid #cdcdcd;
+
+  &.header--border {
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .container--header {
