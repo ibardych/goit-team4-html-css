@@ -1,155 +1,152 @@
 .hero {
- padding-top: 44px;
- @media screen and (min-width: $tablet) {
- padding-top: 38px;
- }
+  padding-top: 44px;
 
- @media screen and (min-width: $desktop) {
- padding-top: 64px;
- }
-
- &__text {
- width: 46px;
- height: 34px;
- font-weight: 400;
- font-size: 14px;
- line-height: 1.2;
- padding-left: 11px;
-
- @media screen and (min-width: $tablet) {
- width: 76px;
- height: 58px;
- font-size: 24px;
- padding-left: 49px;
- }
-
- @media screen and (min-width: $desktop) {
- width: 101px;
- height: 78px;
- font-size: 32px;
- padding-left: 210px;
- }
-}
-
-&__title {
- display: flex;
- justify-content: center;
- font-weight: 400;
- font-size: 14px;
- font-size: 52px;
- line-height: 1.2;
- margin-bottom: -35px;
-
- @media screen and (min-width: $tablet) {
- font-size: 120px;
- margin-bottom: -94px;
- }
-
- @media screen and (min-width: $desktop) {
- font-size: 160px;
- margin-bottom: -93px;
- }
-}
-
-&__icon {
- cursor: pointer;
- @media screen and (min-width: $tablet) {
-  width: 145px;
-  height: 150px;
- }
- 
- @media screen and (min-width: $desktop) {
-  width: 166px;
-  height: 166px;
- }
-}
-
-&__element {
- @media screen and (min-width: $desktop) {
-//  max-width: 58px;
- position: relative;
- }
-}
-
-&__element::after {
- @media screen and (min-width: $desktop) {
- content: "";
- width: 58px;
- height: 8px;
- background-color: $main-color;
- position: absolute;
- top: 15px;
- left: 28px;
- }
-}
-
-&__btn {
-  background-color: inherit;
-  border: none;
-  padding-right: 0;
- 
-  @media screen and (min-width: $desktop) {
-  padding-right: 145px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 38px;
   }
- }
+  @media screen and (min-width: $desktop) {
+    padding-top: 64px;
+  }
+
+  &__text {
+    width: 46px;
+    height: 34px;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 11px;
+
+    @media screen and (min-width: $tablet) {
+      width: 76px;
+      height: 58px;
+      font-size: 24px;
+      padding-left: 49px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 101px;
+      height: 78px;
+      font-size: 32px;
+      padding-left: 210px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    font-size: 52px;
+    margin-bottom: -35px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 120px;
+      margin-bottom: -94px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 160px;
+      margin-bottom: -93px;
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+      width: 145px;
+      height: 150px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 166px;
+      height: 166px;
+    }
+  }
+
+  &__element {
+    @media screen and (min-width: $desktop) {
+      //  max-width: 58px;
+      position: relative;
+    }
+  }
+
+  &__element::after {
+    @media screen and (min-width: $desktop) {
+      content: '';
+      width: 58px;
+      height: 8px;
+      background-color: $main-color;
+      position: absolute;
+      top: 15px;
+      left: 28px;
+    }
+  }
+
+  &__btn {
+    background-color: inherit;
+    border: none;
+    padding-right: 0;
+
+    @media screen and (min-width: $desktop) {
+      padding-right: 145px;
+    }
+  }
 }
 
 .hero-fon {
- height: 274px;
- background-repeat: no-repeat;
- background-position: center;
- background-color: inherit;
- background-size: auto 100%;
- display: flex;
- flex-direction: column;
- justify-content: flex-end;
- margin-bottom: 136px;
+  height: 274px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: inherit;
+  background-size: auto 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 136px;
 
- margin-left: auto;
- margin-right: auto;
- background-image: url(../images/hero/home_imgmob@1x.jpg);
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/hero/home_imgmob@1x.jpg);
 
- @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
- background-image: url(../images/hero/home_imgmob@2x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/home_imgmob@2x.jpg);
   }
 
   @media screen and (min-width: $tablet) {
- background-image: url(../images/hero/home_imgtab@1x.jpg);
- height: 636px;
- margin-bottom: 194px;
- height: 636px;
+    background-image: url(../images/hero/home_imgtab@1x.jpg);
+    height: 636px;
+    margin-bottom: 194px;
+    height: 636px;
 
- @media (min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx){
- background-image: url(../images/hero/home_imgtab@2x.jpg);
- }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/home_imgtab@2x.jpg);
+    }
   }
 
- @media screen and (min-width: $desktop) {
-  background-image: url(../images/hero/home_imgdesk@1x.jpg);
-  height: 636px; 
-  margin-bottom: 193px;
-  height: 636px;
-  
-@media (min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx){
-    background-image: url(../images/hero/home_imgdesk@2x.jpg); 
- }
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/hero/home_imgdesk@1x.jpg);
+    height: 636px;
+    margin-bottom: 193px;
+    height: 636px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/home_imgdesk@2x.jpg);
+    }
   }
 }
 
-
 .hero-one {
- display: flex;
- justify-content: space-between;
- align-items: center;
- margin-bottom: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 61px;
 
- @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 172px;
   }
 
@@ -157,4 +154,3 @@
     margin-bottom: 140px;
   }
 }
-

@@ -2,6 +2,7 @@
   background-color: $secondary-color;
   margin-bottom: 60px;
 }
+
 .store-list {
   display: flex;
   flex-wrap: wrap;
@@ -17,6 +18,7 @@
     gap: 64px 32px;
   }
 }
+
 .store-list__item {
   background-color: $secondary-color;
   width: calc((100% - 16px * 1) / 2);
@@ -25,12 +27,11 @@
     width: calc((100% - 32px * 1) / 2);
   }
 }
+
 .store-list__item:nth-child(2n) {
   margin-right: 0;
 }
-.list {
-  text-decoration: none;
-}
+
 .store-img {
   display: block;
   margin: 0 auto;
@@ -39,10 +40,10 @@
   object-fit: cover;
   object-position: center;
 }
+
 .store-list__title {
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(20px / 16px);
   color: $main-color;
   text-align: left;
   margin-top: 12px;
@@ -50,7 +51,6 @@
 
   @media screen and (min-width: $tablet) {
     font-size: 32px;
-    line-height: calc(39px / 32px);
     margin-top: 16px;
     margin-bottom: 8px;
     display: flex;
@@ -65,6 +65,7 @@
     gap: 16px;
   }
 }
+
 .store-list__title::after {
   content: '';
   width: 100%;
@@ -75,13 +76,11 @@
 .store-list__text {
   font-weight: 600;
   font-size: 12px;
-  line-height: calc(15px / 12px);
   color: rgba(0, 0, 0, 0.6);
   text-align: left;
 
   @media screen and (min-width: $tablet) {
     font-size: 24px;
-    line-height: calc(29px / 24px);
   }
 }
 
@@ -89,7 +88,6 @@
   color: $secondary-color;
   padding: 10px 35px;
   font-size: 20px;
-  line-height: calc(24px / 20px);
   background-color: $brand-color;
   border: none;
   border-radius: 40px;
@@ -98,17 +96,17 @@
   transition: background-color $animation-duration $transition-timing-function;
   margin: 0 auto;
   display: block;
+
   @media screen and (min-width: $tablet) {
     font-size: 28px;
-    line-height: calc(24px / 28px);
     padding: 20px 44px;
   }
-}
 
-.main-button--store:hover {
-  background-color: $hover-color;
-}
+  &:hover {
+    background-color: $hover-color;
+  }
 
-.main-button--store:focus {
-  background-color: $focus-color;
+  &:focus {
+    background-color: $focus-color;
+  }
 }

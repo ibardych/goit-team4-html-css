@@ -1,18 +1,14 @@
 .main-button {
+  display: block;
   color: $secondary-color;
-  
   padding: 10px 35px;
   margin: 0 auto;
-   
   font-size: 20px;
-  line-height: 24px;
   background-color: $brand-color;
   border: none;
   border-radius: 40px;
   cursor: pointer;
-  transition: 250ms;
   transition: background-color $animation-duration $transition-timing-function;
-  display: block;
 }
 
 .main-button:hover {
