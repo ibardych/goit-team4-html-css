@@ -8,6 +8,10 @@
   }
 }
 
+.blog__container {
+  padding: 0;
+}
+
 .blog__title {
   margin-bottom: 32px;
 }
@@ -45,11 +49,12 @@
 }
 
 .blog__gallery {
-  display: flex;
+  position: relative;
+  max-width: 1084px;
+  width: 100%;
   margin: 0 auto;
-  max-width: 768px;
   margin-bottom: 28px;
-  column-gap: 20px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: $tablet) {
@@ -61,5 +66,92 @@
 @media screen and (min-width: $desktop) {
   .blog__gallery {
     margin-bottom: 44px;
+    overflow: visible;
+  }
+}
+
+.blog__slider-image {
+  height: auto;
+}
+
+.blog__gallery-inner {
+  overflow: hidden;
+  padding: 45px 0;
+  margin: 0 -92px;
+}
+
+@media screen and (min-width: $tablet) {
+  .blog__gallery-inner {
+    margin: 0 -92px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .blog__gallery-inner {
+    margin: 0;
+  }
+}
+
+.swiper-slide img {
+  transition: transform 250ms $transition-timing-function;
+}
+
+.swiper-slide-next img {
+  transform-origin: center;
+  transform: scale(1.25) !important;
+  position: relative;
+  z-index: 1;
+  transition: transform 400ms $transition-timing-function;
+}
+
+.blog__button-slider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+
+  &.swiper-button-disabled {
+    display: none;
+    cursor: inherit;
+  }
+}
+
+.blog__button-slider svg {
+  width: 41px;
+  height: 27px;
+  stroke: #fff;
+}
+
+@media screen and (min-width: $tablet) {
+  .blog__button-slider svg {
+    width: 97px;
+    height: 64px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .blog__button-slider svg {
+    stroke: #000;
+  }
+}
+
+.blog__button-prev {
+  left: 0;
+}
+
+@media screen and (min-width: $desktop) {
+  .blog__button-prev {
+    left: -58px;
+  }
+}
+
+.blog__button-next {
+  right: 0;
+}
+
+@media screen and (min-width: $desktop) {
+  .blog__button-next {
+    right: -58px;
   }
 }
