@@ -15,18 +15,27 @@
 
     refs.modal.classList.toggle('is-hidden');
 
-    refs.form.reset();
-    refs.sendModalBtn.classList.add('modal-button-diabled');
-
     // const scrollLockMethod = !refs.modal.classList.contains('is-hidden')
     //   ? 'disableBodyScroll'
     //   : 'enableBodyScroll';
     // bodyScrollLock[scrollLockMethod](document.body);
   }
 
+  function sendModal(event) {
+    event.preventDefault();
+
+    if (
+      refs.sendModalBtn.classList.contains('modal-button-diabled') === false
+    ) {
+      refs.modal.classList.toggle('is-hidden');
+      refs.form.reset();
+      refs.sendModalBtn.classList.add('modal-button-diabled');
+    }
+  }
+
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  refs.sendModalBtn.addEventListener('click', toggleModal);
+  refs.sendModalBtn.addEventListener('click', sendModal);
 
   const textInput = document.querySelector('.modal-subscribe__form-input');
 

@@ -23,6 +23,7 @@
   width: calc(#{$mobile} - 24px * 2);
   max-width: calc(100% - 24px * 2);
   transform: translateX(-50%) translateY(-50%);
+  overflow: hidden;
 
   @media screen and (min-width: $desktop) {
     max-width: $mobile;
