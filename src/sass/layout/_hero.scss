@@ -60,6 +60,12 @@
       width: 166px;
       height: 166px;
     }
+    &:hover {
+      transform: rotateZ(360deg);
+      transform-origin: center center;
+      transition: transform 700ms;
+      animation-iteration-count: infinite;
+    }
   }
 
   &__element {
