@@ -12,9 +12,9 @@
 
     window.onscroll = (event) => {
         if (window.scrollY > 0) {
-            header.classList?.add('header--border');
+            header.classList.add('header--border');
         } else {
-            header.classList?.remove('header--border');
+            header.classList.remove('header--border');
         }
     }
 })();
