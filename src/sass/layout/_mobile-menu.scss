@@ -14,6 +14,9 @@
   &.is-menu-hidden {
     transform: translateX(-100%);
   }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .mobile-menu__close-icon {
