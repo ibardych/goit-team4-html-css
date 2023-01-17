@@ -23,10 +23,8 @@
   width: calc(#{$mobile} - 24px * 2);
   max-width: calc(100% - 24px * 2);
   transform: translateX(-50%) translateY(-50%);
-}
 
-@media screen and (min-width: $desktop) {
-  .modal__window {
+  @media screen and (min-width: $desktop) {
     max-width: $mobile;
   }
 }
@@ -53,10 +51,8 @@
   border: none;
   padding: 0;
   transition: opacity $animation-duration $transition-timing-function;
-}
 
-@media screen and (min-width: $tablet) {
-  .modal__close {
+  @media screen and (min-width: $tablet) {
     width: 24px;
     height: 24px;
     top: 24px;
@@ -69,10 +65,8 @@
   height: 18px;
   display: block;
   stroke: $main-color;
-}
 
-@media screen and (min-width: $tablet) {
-  .modal__close svg {
+  @media screen and (min-width: $tablet) {
     width: 24px;
     height: 24px;
   }
@@ -85,10 +79,8 @@
 
 .modal__container {
   padding: 28px 16px;
-}
 
-@media screen and (min-width: $tablet) {
-  .modal__container {
+  @media screen and (min-width: $tablet) {
     padding: 48px 32px;
   }
 }
@@ -96,12 +88,9 @@
 .modal__title {
   font-weight: 600;
   font-size: 20px;
-  line-height: 1.2;
   margin-bottom: 14px;
-}
 
-@media screen and (min-width: $tablet) {
-  .modal__title {
+  @media screen and (min-width: $tablet) {
     font-size: 32px;
     margin-bottom: 24px;
   }
@@ -110,13 +99,11 @@
 .modal__text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.3;
+  line-height: 1.25;
   margin-bottom: 18px;
   color: $modal-color1;
-}
 
-@media screen and (min-width: $tablet) {
-  .modal__text {
+  @media screen and (min-width: $tablet) {
     font-size: 16px;
     margin-bottom: 32px;
   }
@@ -131,13 +118,10 @@
 .modal__form-label {
   display: block;
   font-size: 10px;
-  line-height: 1.2;
   color: $modal-color1;
   margin-bottom: 8px;
-}
 
-@media screen and (min-width: $tablet) {
-  .modal__form-label {
+  @media screen and (min-width: $tablet) {
     font-size: 14px;
     margin-bottom: 8px;
   }
@@ -153,42 +137,35 @@
   background-color: inherit;
   outline: inherit;
   font-size: 12px;
-  line-height: 1.25;
   transition: border-color $animation-duration $transition-timing-function;
   margin-bottom: 14px;
-}
 
-@media screen and (min-width: $tablet) {
-  .modal__form-input {
+  @media screen and (min-width: $tablet) {
     height: 49px;
     font-size: 14px;
-    line-height: 1.21;
     padding: 16px;
     margin-bottom: 24px;
   }
-}
 
-.modal__form-input-last {
-  margin-bottom: 24px;
-}
+  &-last {
+    margin-bottom: 24px;
 
-@media screen and (min-width: $tablet) {
-  .modal__form-input-last {
-    margin-bottom: 38px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 38px;
+    }
   }
-}
 
-.modal__form-input:focus {
-  border: 1px solid #000;
-}
+  &:focus {
+    border: 1px solid #000;
+  }
 
-.modal__form-input::placeholder {
-  font-size: 12px;
-  line-height: 1.2;
-}
+  &::placeholder {
+    font-size: 12px;
+  }
 
-@media screen and (min-width: $tablet) {
-  .modal__form-input::placeholder {
-    font-size: 14px;
+  @media screen and (min-width: $tablet) {
+    &::placeholder {
+      font-size: 14px;
+    }
   }
 }
