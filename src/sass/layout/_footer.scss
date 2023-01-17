@@ -9,20 +9,15 @@
   padding-top: 32px;
   padding-bottom: 32px;
   gap: 32px;
-}
 
-@media screen and (min-width: $tablet) {
-  .footer--container {
+  @media screen and (min-width: $tablet) {
     padding-top: 60px;
     padding-bottom: 54px;
     gap: 44px;
     justify-content: space-between;
     flex-wrap: nowrap;
   }
-}
-
-@media screen and (min-width: $desktop) {
-  .footer--container {
+  @media screen and (min-width: $desktop) {
     padding-top: 72px;
     padding-bottom: 72px;
     gap: 96px;
@@ -40,13 +35,10 @@
 .footer__title {
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(22 / 18);
   color: $secondary-color;
   margin-bottom: 18px;
-}
 
-@media screen and (min-width: $tablet) {
-  .footer__title {
+  @media screen and (min-width: $tablet) {
     font-size: 20px;
     white-space: nowrap;
   }
@@ -54,10 +46,8 @@
 
 .footer__logo {
   display: none;
-}
 
-@media screen and (min-width: $desktop) {
-  .footer__logo {
+  @media screen and (min-width: $desktop) {
     display: block;
     margin-right: 100px;
   }
@@ -80,24 +70,18 @@
 
 .footer-nav__link {
   font-size: 14px;
-  line-height: calc(17 / 14);
   color: $secondary-color;
-}
 
-@media screen and (min-width: $tablet) {
-  .footer-nav__link {
+  @media screen and (min-width: $tablet) {
     font-size: 16px;
   }
 }
 
 .footer__opening-text {
   font-size: 14px;
-  line-height: calc(17 / 14);
   color: $secondary-color;
-}
 
-@media screen and (min-width: $tablet) {
-  .footer__opening-text {
+  @media screen and (min-width: $tablet) {
     font-size: 16px;
   }
 }
@@ -111,8 +95,8 @@
 .footer__contact-address {
   font-style: normal;
   font-size: 14px;
-  line-height: calc(17 / 14);
   color: $secondary-color;
+
   @media screen and (min-width: $tablet) {
     font-size: 16px;
   }
@@ -130,33 +114,26 @@
 
 .social__list {
   display: flex;
-}
+  gap: 14px;
 
-@media screen and (min-width: $tablet) {
-  .social__list {
-    display: block;
+  @media screen and (min-width: $tablet) {
+    flex-direction: column;
+    gap: 18px;
   }
 }
 
-.social__item :not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 14px;
-}
 
-@media screen and (min-width: $tablet) {
-  .social__item :not(:last-child) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 18px;
-  }
-  .social__item {
-    margin-right: 0;
   }
 }
 
 .social__icon {
   fill: $secondary-color;
-}
 
-@media screen and (min-width: $desktop) {
-  .footer__icon {
+  @media screen and (min-width: $desktop) {
     margin-left: 100px;
   }
 }
