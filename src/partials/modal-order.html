@@ -9,26 +9,32 @@
             something before you make an order please fill in your contact
             details. We will call you back.
           </p>
-          <form name="modal__form">
-            <label class="modal__form-label" for="modal-window-email"
-              >Name</label
-            >
+          <form name="modal-form">
+            <label class="modal__form-label" for="modal-store-name">Name</label>
             <input
-              class="modal__form-input"
+              id="modal-store-name"
+              class="modal__form-input text-input"
               type="text"
               name="user_name"
               placeholder="Your name"
+              required
             />
-            <label class="modal__form-label" for="modal-window-email"
+            <label class="modal__form-label" for="modal-store-email"
               >Email</label
             >
             <input
-              class="modal__form-input modal__form-input-last"
+              id="modal-store-email"
+              class="modal__form-input modal__form-input-last text-input"
               type="email"
               name="email"
               placeholder="Your email"
+              required
             />
-            <button type="submit" class="modal-button" data-action="send">
+            <button
+              type="submit"
+              class="modal-button modal-button-diabled"
+              data-action="send"
+            >
               Send
             </button>
           </form>

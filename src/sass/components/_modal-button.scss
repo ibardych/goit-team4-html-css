@@ -9,19 +9,22 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background-color $animation-duration $transition-timing-function;
-}
 
-.modal-button:hover {
-  background-color: $hover-color;
-}
-
-.modal-button:focus {
-  background-color: $focus-color;
-}
-
-@media screen and (min-width: $tablet) {
-  .modal-button {
+  @media screen and (min-width: $tablet) {
     padding: 14px;
     font-size: 18px;
+  }
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:focus {
+    background-color: $focus-color;
+  }
+
+  &-diabled {
+    opacity: 0.4;
+    cursor: default;
   }
 }

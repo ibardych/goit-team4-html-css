@@ -11,17 +11,25 @@
             Be the first to get exclusive offers and the latest news on our
             product directly in your box.
           </p>
-          <form name="modal__form">
-            <label class="modal__form-label" for="modal-window-email"
+          <form name="modal-1-form">
+            <label class="modal__form-label" for="modal-subscribe-email"
               >Email</label
             >
             <input
+              id="modal-subscribe-email"
               class="modal__form-input modal-subscribe__form-input"
               type="email"
               name="email"
               placeholder="Your email"
+              required
             />
-            <button type="submit" class="modal-button">Send</button>
+            <button
+              type="submit"
+              class="modal-button modal-button-diabled"
+              data-modal-send-1
+            >
+              Send
+            </button>
           </form>
         </div>
       </div>
