@@ -1,11 +1,31 @@
 .hero {
-  padding-top: 112px;
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
 
-  @media screen and (min-width: $tablet) {
-    padding-top: 128px;
+    @media screen and (min-width: $tablet) {
+      padding-left: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-left: 210px;
+      justify-content: flex-start;
+    }
   }
-  @media screen and (min-width: $desktop) {
-    padding-top: 154px;
+
+  &__block {
+    padding-bottom: 100px;
+    padding-top: 95px;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 119px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 149px;
+    }
   }
 
   &__text {
@@ -13,34 +33,24 @@
     height: 34px;
     font-weight: 400;
     font-size: 14px;
-    padding-left: 11px;
-    opacity: 0;
-    animation: hero-fl 1000ms ease 200ms forwards;
+    line-height: 1.2;
+    padding-left: 0;
+    margin-right: 0;
 
     @media screen and (min-width: $tablet) {
       width: 76px;
       height: 58px;
       font-size: 24px;
       padding-left: 49px;
+      margin-right: 40px;
     }
 
     @media screen and (min-width: $desktop) {
       width: 101px;
       height: 78px;
       font-size: 32px;
-      padding-left: 210px;
-    }
-  }
-
-  @keyframes hero-fl {
-    0% {
-      transform: translateX(-6vw);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
+      padding-left: 0;
+      margin-right: 0;
     }
   }
 
@@ -50,41 +60,59 @@
     font-weight: 400;
     font-size: 14px;
     font-size: 52px;
-    margin-bottom: -35px;
+    line-height: 1.2;
+    margin-top: -25px;
 
     @media screen and (min-width: $tablet) {
       font-size: 120px;
-      margin-bottom: -94px;
+      margin-top: -27px;
     }
 
     @media screen and (min-width: $desktop) {
       font-size: 160px;
-      margin-bottom: -93px;
+      margin-top: -77px;
     }
   }
 
-  &__icon {
+  &__icon-mob {
     cursor: pointer;
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &__icon-tab {
+    cursor: pointer;
+    display: none;
 
     @media screen and (min-width: $tablet) {
-      width: 145px;
-      height: 150px;
+      display: block;
+      margin-left: 8px;
     }
+
     @media screen and (min-width: $desktop) {
-      width: 166px;
-      height: 166px;
+      display: none;
     }
-    &:hover {
-      transform: rotateZ(360deg);
-      transform-origin: center center;
-      transition: transform 700ms;
-      animation-iteration-count: infinite;
+  }
+
+  &__icon-desk {
+    cursor: pointer;
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: block;
     }
   }
 
   &__element {
     @media screen and (min-width: $desktop) {
-      //  max-width: 58px;
       position: relative;
     }
   }
@@ -104,25 +132,7 @@
   &__btn {
     background-color: inherit;
     border: none;
-    padding-right: 0;
-    opacity: 0;
-    animation: hero-fr 1000ms ease 200ms forwards;
-
-    @media screen and (min-width: $desktop) {
-      padding-right: 145px;
-    }
-  }
-
-  @keyframes hero-fr {
-    0% {
-      transform: translateX(6vw);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
+    padding: 0;
   }
 }
 
@@ -135,56 +145,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-bottom: 136px;
 
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../images/hero/home_imgmob@1x.jpg);
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/hero/home_imgmob@2x.jpg);
-  }
+  margin-left: 25px;
+  margin-right: 8px;
 
   @media screen and (min-width: $tablet) {
-    background-image: url(../images/hero/home_imgtab@1x.jpg);
-    height: 636px;
-    margin-bottom: 194px;
+    margin-left: auto;
     height: 636px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/hero/home_imgtab@2x.jpg);
+    @media screen and (min-width: $desktop) {
+      margin-left: 110px;
+      margin-right: 110px;
+      height: 636px;
     }
-  }
-
-  @media screen and (min-width: $desktop) {
-    background-image: url(../images/hero/home_imgdesk@1x.jpg);
-    height: 636px;
-    margin-bottom: 193px;
-    height: 636px;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/hero/home_imgdesk@2x.jpg);
-    }
-  }
-}
-
-.hero-one {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 61px;
-
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 172px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 140px;
   }
 }
