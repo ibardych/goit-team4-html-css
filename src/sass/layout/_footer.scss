@@ -75,6 +75,10 @@
 
   @media screen and (min-width: $tablet) {
     font-size: 16px;
+  }  
+  &:hover,
+  &:focus {
+    opacity: 0.7;
   }
 }
 
@@ -101,10 +105,13 @@
   @media screen and (min-width: $tablet) {
     font-size: 16px;
   }
-  &:hover,
-  &:focus {
-    color: $brand-color;
-  }
+}
+
+.contact-footer:hover,
+.contact-footer:focus,
+.footer__contact-address:hover,
+.footer__contact-address:focus {
+    opacity: 0.7;
 }
 
 .footer__contact-item:not(:last-child) {
@@ -140,5 +147,9 @@
 
   @media screen and (min-width: $desktop) {
     margin-left: 100px;
+  }  
+  &:hover,
+  &:focus {
+    opacity: 0.7;
   }
 }
