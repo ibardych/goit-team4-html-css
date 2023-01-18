@@ -57,17 +57,30 @@
     const name = document.querySelector('input#modal-store-name');
     const email = document.querySelector('input#modal-store-email');
 
-    var validRegex =
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const validName = /^[a-zA-Z]+\s[a-zA-Z]+$/;
+    const validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if (
       name.value !== '' &&
+      name.value.match(validName) &&
       email.value !== '' &&
-      email.value.match(validRegex)
+      email.value.match(validEmail)
     ) {
       refs.sendModalBtn.classList.remove('modal-button-diabled');
     } else {
       refs.sendModalBtn.classList.add('modal-button-diabled');
+    }
+
+    if (name.value !== '' && !name.value.match(validName)) {
+      name.classList.add('modal__form-input--required');
+    } else {
+      name.classList.remove('modal__form-input--required');
+    }
+
+    if (email.value !== '' && !email.value.match(validEmail)) {
+      email.classList.add('modal__form-input--required');
+    } else {
+      email.classList.remove('modal__form-input--required');
     }
   }
 })();

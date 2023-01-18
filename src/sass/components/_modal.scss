@@ -156,11 +156,13 @@
 
   &::placeholder {
     font-size: 12px;
-  }
 
-  @media screen and (min-width: $tablet) {
-    &::placeholder {
+    @media screen and (min-width: $tablet) {
       font-size: 14px;
     }
+  }
+
+  &--required {
+    border-color: rgb(185, 12, 12) !important;
   }
 }

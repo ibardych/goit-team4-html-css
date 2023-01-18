@@ -44,13 +44,18 @@
   function checkForm() {
     const email = document.querySelector('input#modal-subscribe-email');
 
-    var validRegex =
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    if (email.value !== '' && email.value.match(validRegex)) {
+    if (email.value !== '' && email.value.match(validEmail)) {
       refs.sendModalBtn.classList.remove('modal-button-diabled');
     } else {
       refs.sendModalBtn.classList.add('modal-button-diabled');
+    }
+
+    if (email.value !== '' && !email.value.match(validEmail)) {
+      email.classList.add('modal__form-input--required');
+    } else {
+      email.classList.remove('modal__form-input--required');
     }
   }
 })();
