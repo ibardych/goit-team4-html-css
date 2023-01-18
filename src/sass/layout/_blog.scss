@@ -92,6 +92,7 @@
   transform: translateY(-50%);
   z-index: 1;
   cursor: pointer;
+  transition: opacity $animation-duration $transition-timing-function;
 
   &:hover {
     opacity: 0.5;
