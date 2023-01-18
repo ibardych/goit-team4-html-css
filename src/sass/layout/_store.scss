@@ -1,6 +1,21 @@
 .store {
   background-color: $secondary-color;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 80px;
+    }
+  }
 }
 
 .store-list {
