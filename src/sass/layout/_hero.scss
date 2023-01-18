@@ -36,6 +36,20 @@
     line-height: 1.2;
     padding-left: 0;
     margin-right: 0;
+    opacity: 0;
+    animation: hero-fl 1000ms ease 200ms forwards;
+
+    @keyframes hero-fl {
+      0% {
+        transform: translateX(-6vw);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
 
     @media screen and (min-width: $tablet) {
       width: 76px;
@@ -65,7 +79,7 @@
 
     @media screen and (min-width: $tablet) {
       font-size: 120px;
-      margin-top: -27px;
+      margin-top: -52px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -133,30 +147,51 @@
     background-color: inherit;
     border: none;
     padding: 0;
+    opacity: 0;
+    animation: hero-fr 1000ms ease 200ms forwards;
+
+    @keyframes hero-fr {
+      0% {
+        transform: translateX(6vw);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
   }
-}
 
-.hero-fon {
-  height: 274px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: inherit;
-  background-size: auto 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  &__icon:hover {
+    transform: rotateZ(360deg);
+    transform-origin: center;
+    transition: transform 700ms ease-in-out;
+  }
 
-  margin-left: 25px;
-  margin-right: 8px;
+  &-fon {
+    height: 274px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: inherit;
+    background-size: auto 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
-  @media screen and (min-width: $tablet) {
-    margin-left: auto;
-    height: 636px;
+    margin-left: 14px;
+    margin-right: 8px;
 
-    @media screen and (min-width: $desktop) {
-      margin-left: 110px;
-      margin-right: 110px;
+    @media screen and (min-width: $tablet) {
       height: 636px;
+      margin-left: 40px;
+      margin-right: 20px;
+
+      @media screen and (min-width: $desktop) {
+        margin-left: 110px;
+        margin-right: 110px;
+        height: 636px;
+      }
     }
   }
 }
