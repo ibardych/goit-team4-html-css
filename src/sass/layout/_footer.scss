@@ -64,6 +64,12 @@
 
 .footer__logo-link {
   display: block;
+  transition: opacity $animation-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .footer__logo-icon {
@@ -145,24 +151,23 @@
   }
 }
 
-.social__icon {
+.social__link {
+  transition: opacity $animation-duration $transition-timing-function;
+
   @media screen and (min-width: $tablet) {
     margin-right: 16px;
   }
   @media screen and (min-width: $desktop) {
+    margin-left: 100px;
     margin-right: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
   }
 }
 
 .social__icon {
   fill: $secondary-color;
-  transition: opacity $animation-duration $transition-timing-function;
-
-  @media screen and (min-width: $desktop) {
-    margin-left: 100px;
-  }
-  &:hover,
-  &:focus {
-    opacity: 0.7;
-  }
 }
