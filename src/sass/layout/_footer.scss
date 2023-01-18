@@ -144,5 +144,9 @@
 
   @media screen and (min-width: $desktop) {
     margin-left: 100px;
+  }  
+  &:hover,
+  &:focus {
+    opacity: 0.7;
   }
 }
